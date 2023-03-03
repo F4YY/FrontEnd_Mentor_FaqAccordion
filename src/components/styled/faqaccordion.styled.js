@@ -76,7 +76,7 @@ export const Boximage = styled.img`
         left:0;
     }
 `
-export const Womanimage = styled.img`
+export const Womanimage = styled.div`
     display: flex;
     width: 480px;
     height: 360px;
