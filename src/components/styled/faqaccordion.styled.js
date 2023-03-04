@@ -3,6 +3,7 @@ import bgpatterndesktop from '../images/bg-pattern-desktop.svg';
 import bgpatternmobile from '../images/bg-pattern-desktop.svg';
 import womandesktop from '../images/illustration-woman-online-desktop.svg';
 import womanmobile from '../images/illustration-woman-online-mobile.svg';
+import arrowdown from '../images/icon-arrow-down.svg';
 
 export const Vstack = styled.div`
     display: flex;
@@ -137,24 +138,16 @@ export const Questionarrow = styled(Hstack)`
     justify-content: space-between;
     align-items: center;
 `
-export const Arrowdown = styled.img`
+export const Arrowdown = styled.div`
     width: 10px;
     height: 8px;
-    padding-bottom: 7px;
     color: var(--Soft-red);
+    background-image: url(${arrowdown});
+    background-repeat: no-repeat;
     :hover{
         font-weight: var(--bold);
         cursor: pointer;
     }
-`
-export const Arrowup = styled(Arrowdown)`
-    transform: rotate(180deg);
-    padding-bottom: 0;
-    padding-top: 7px;
-    :hover{
-        font-weight: var(--bold);
-        cursor: pointer;
-}
 `
 //Styled for attribution:
 export const Attribution = styled.div`

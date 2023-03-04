@@ -33,10 +33,9 @@ export const Container = styled.div`
         }
     }
     p#question_faq{
-        font-size: 1.15em;
+        font-size: 1.2em;
         font-weight: var(--reguler);
         color:var(--Very-dark-grayish-blue);
-        margin: 0 0 10px;
         :hover{
             font-weight: var(--bold);
             color:var(--Soft-red);
@@ -47,9 +46,17 @@ export const Container = styled.div`
         font-weight: var(--bold);
     }
     p#answer_faq{
-        font-size: 1.1em;
+        font-size: 1.15em;
         font-weight: var(--reguler);
         color:var(--Dark-grayish-blue);
-        margin: 0 10px 0 0;
+        margin: 10px 10px 0 0;
+    }
+    .rotate{
+        transform: rotateZ(180deg);
+        transition: 0.3s ease-in-out;
+    }
+    .default{
+        transform: rotateZ(0deg);
+        transition: 0.3s ease-in-out;
     }
 `

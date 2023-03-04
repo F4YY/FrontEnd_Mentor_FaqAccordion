@@ -1,6 +1,5 @@
 import React from 'react';
-import { Arrowdown, Arrowup, Questionarrow, Styledfaqanswer } from './styled/faqaccordion.styled';
-import arrowdown from './images/icon-arrow-down.svg';
+import { Arrowdown, Questionarrow, Styledfaqanswer } from './styled/faqaccordion.styled';
 
 export const Faqandanswer = ({question,answer,onClick,className}) => {
     const [showAnswer, setShowanswer] = React.useState(false);
@@ -15,8 +14,8 @@ export const Faqandanswer = ({question,answer,onClick,className}) => {
                 {question}
             </p>
             {showAnswer?
-                (<Arrowup src={arrowdown} alt='arrowdown' />)
-                : (<Arrowdown src={arrowdown} alt='arrowdown' />)}
+                (<Arrowdown className={`${showAnswer && "rotate"}`}  />)
+                : (<Arrowdown className={`${!showAnswer && "default"}`} />)}
         </Questionarrow>
         {showAnswer &&
         <p id='answer_faq'>
