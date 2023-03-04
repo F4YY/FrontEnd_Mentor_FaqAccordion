@@ -107,7 +107,7 @@ export const Rightside = styled.div`
     min-height: 510px;
     border-radius: 0 25px 25px 0;
     @media screen and (max-width:1025px) {
-        width: 80%;
+        width: 90%;
         height:auto;
     }
     @media screen and (max-width:600px) {
@@ -127,10 +127,10 @@ export const Styledfaqanswer = styled(Vstack)`
     padding-bottom: 10px;
     border-bottom: 1px solid var(--Light-grayish-blue);
     @media screen and (max-width:1025px) {
-        width: 80%;
+        width: 85%;
     }
     @media screen and (max-width:600px) {
-        width: 80%;
+        width: 85%;
         margin: 10px auto;
     }
 `
@@ -141,6 +141,7 @@ export const Questionarrow = styled(Hstack)`
 export const Arrowdown = styled.div`
     width: 10px;
     height: 8px;
+    margin-left:10px;
     color: var(--Soft-red);
     background-image: url(${arrowdown});
     background-repeat: no-repeat;
